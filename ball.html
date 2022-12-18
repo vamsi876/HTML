@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .a{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border-bottom: 4px;
+            border-radius: 50px;
+            animation:ball_bouncing 5s infinite;
+
+        }
+        @keyframes ball_bouncing{
+            0%,50%{
+                top:0%;
+
+            }
+            40%,60%,80%,100%{
+                top:50%;
+            }
+            70%{
+                top:40%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+
+    </div>
+</body>
+</html>
