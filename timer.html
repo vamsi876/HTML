@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100px;
+            width:100px;
+        }
+        .bar{
+            width:100px;
+            height: 20px;
+            margin-bottom: 10px;
+            background-color: black;
+            
+        }
+        .one{
+            animation: barr 4s infinite;
+        }
+        @keyframes barr{
+            0%{
+            width:100px;
+            background-color: black;
+            }
+            10%{
+            width:150px;
+            background-color:bisque;
+            }
+            30%{
+            width:20px;
+            background-color:aquamarine;
+            }
+            50%{
+            width:150px;
+            background-color:bisque;
+            }
+            70%{
+            width:15px;
+            background-color:blue;
+            }
+            100%{
+            width:1px;
+            background-color:blueviolet
+            }
+        }
+        .two{
+            animation: barr1 4s infinite;
+        }
+        @keyframes barr1{
+            0%{
+            width:100px;
+            background-color: black;
+            }
+            10%{
+            width:50px;
+            background-color:brown
+            }
+            30%{
+            width:120px;
+            background-color:bisque;
+            }
+            70%{
+            width:25px;
+            background-color:darkblue;
+            }
+            100%{
+            width:1px;
+            background-color:chartreuse;
+            }
+        }
+        .three{
+            animation: barr2 4s infinite;
+        }
+        @keyframes barr2{
+            0%{
+            width:100px;
+            background-color: black;
+            }
+            10%{
+            width:150px;
+            background-color:bisque;
+            }
+            30%{
+            width:60px;
+            background-color:coral;
+            }
+            50%{
+            width:18px;
+            background-color:blue;
+            }
+            70%{
+            width:60px;
+            background-color:coral;
+            }
+            100%{
+            width:1px;
+            background-color:blueviolet
+            }
+        }
+        .four{
+            animation: barr3 4s infinite;
+        }
+        @keyframes barr3{
+            0%{
+            width:100px;
+            background-color: black;
+            }
+            10%{
+            width:50px;
+            background-color:brown
+            }
+            30%{
+            width:120px;
+            background-color:bisque;
+            }
+            50%{
+            width:50px;
+            background-color:brown
+            }
+            70%{
+            width:12px;
+            background-color:darkblue;
+            }
+            100%{
+            width:1px;
+            background-color:chartreuse;
+            }
+        }
+        .five{
+            animation: barr4 4s infinite;
+        }
+        @keyframes barr4{
+            0%{
+            width:100px;
+            background-color: black;
+            }
+            10%{
+            width:150px;
+            background-color:bisque;
+            }
+            30%{
+            width:20px;
+            background-color:bisque;
+            }
+            50%{
+            width:150px;
+            background-color:bisque;
+            }
+            70%{
+            width:23px;
+            background-color:blue;
+            }
+            100%{
+            width: 1px;
+            background-color:blueviolet
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bar one"></div>
+    <div class="bar two"></div>
+    <div class="bar three"></div>
+    <div class="bar four"></div>
+    <div class="bar five"></div>
+    
+
+</body>
+</html>
