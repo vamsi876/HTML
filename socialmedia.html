@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .page{
+            height: 800px;
+            border:5px solid rgb(180, 189, 180);
+        }
+        .header{
+            margin: 10px;
+            margin-top: 28px;
+            height:20%;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(200, 244, 244);
+        }
+        .body{
+            margin: 10px;
+            height:50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            background-color: rgb(175, 247, 223);
+        }
+
+        .fotter{
+            margin:10px;
+            background-color: rgb(243, 243, 225);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+
+        }
+        .fotter div{
+            width: fit-content;
+            height: fit-content;
+            padding:5px;
+            background-color:rgb(196, 26, 26);
+            margin: 10px;
+            border-radius: 10px; 
+            color: azure;
+            text-align: center;  
+
+         }
+
+    .fa{
+        font-size: 50px;
+
+    }
+    .fa:hover{
+        opacity:0.8;
+        transform: scale(1.5);
+    }
+     /* img:hover{
+        transform: scale(1.5);
+    } */
+    /* h3:hover{
+      color:red;
+    } */
+
+    .card:hover{
+      transform: scale(1.1);
+      color: crimson;
+      border-color: red;
+      box-shadow: 2px red;
+
+    }
+    /* .body:hover{
+      transform: scale(1.1);
+    } */
+    /* .header:hover{
+      transform: scale(1.1);
+    }
+    .fotter:hover{
+      transform: scale(1.1); 
+    }*/
+    
+    .card{
+            margin: 35px;
+            border: 2px solid black;
+            flex:0 0 150px;
+            width: 100px;
+            
+        }
+        .card img{
+            width :100%
+        }
+        .card .text{
+            padding: 2px;
+        }
+
+        .i{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .f{
+          font-family: 'Times New Roman', Times, serif;
+        }
+        .t{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .g{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .l{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .y{
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .fotter .fa-facebook{
+          padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+    <div class="header"> SOCIAL MEDIA PLATFORMS</div>
+    <div class="body">
+        <article class="card">
+            <img src=data:image/png;base64,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 alt="Sample photo">
+            <div class="text">
+              <h3 class="f">Facebook</h3>
+              <p>Facebook is an online social media and social networking service owned by American company Meta Platforms</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="data:image/jpeg;base64,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" alt="Sample photo">
+            <div class="text">
+              <h3 class="i">Instagarm</h3>
+              <p>Instagram is a photo and video sharing social networking service owned by American company Meta Platforms.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAXVBMVEX///8dofIAnfIAm/EAmfEVn/IAl/Hg8P202/rx+f75/f/T6fzD4vuf0fiFxffq9f5MsPQppPJru/XZ7fxXtPWNyfen1fnL5vt3wPY+qvQAlPFkuPWZzvg9rPN2vPZv+CZ4AAAC8UlEQVRoge2Z6ZKqMBCFoTut7CHsDuD7P+YFRmcchQQatOpW5fupJIeT7nQWHMdisVgsFovFYrFYLP8/Z69s0yKLI/+DooGXEgIRAYJqwse/ZPQ+2egC5P4AkMn7P34MLN0sWPFQgg+qk7Jbj78Heakw5cjWX+2Kd0P3BfT8ukwRXFFzdDPChCM7WB7iPeo3HFlnaCoMLWMxJ3uDLmvi9EIojK+cz7q9m1ajrNw81N7UKRaaly5II1sMol5Bcrn5PCV8t7+cl54INXap9RIFgOFS40USuPXgegtPNKAZZndMLVxqqqH86RWb2fLnX3SyI6LaLuvEv6OIaq7u5JrofjfrGLJO9Bg9zF6jHOmyeQA4bodhPP3pBJtnZc+gy10TnsIHmP1NzkqbVm7OlHXi537ppLoH05XeL1s3mOkXxKWrb9ltiC9b9zGjH6UB+qaKQllrZd3FcmOmX5gpNGiDq/S6mwvkL2fXNEUXIcXdaoXDghDyhRXX7PUSSydPuX5ZW5yRBBD7a8bUhStXd5qexB1nXm0eCU/m3jW6rC3dBD+nRvjTN9HXXz09a083IXWbRQPA28LuNsw7oNwIFDfCpHZUySGluYYp2yM7LHXM+Sv2nj9rl2WZvSj8IIvTdstQ7pUdLRenrZ5xV1aNTLPfLzfaNR5fjeTUp70y7Cxe7O7Y4twpYHNKH2DXfCiYs3vIZVK2OaniI2QdubFYUn+I7OZiCQck1U34+YbqA6M8IdXq5MKdC8ITMa3zTCl/mzGLH6cojNo7l91ZAhlVrV6YdpwBdXj6KUXu9kujFeStfpzfIysT0A8yvCG2zjkh0+VNevgVv6xS48qPR+wwRq3p7YNzXTVKGKsGKv5p6En3+iVQCERDVEcIywOrRd6KdSVq7ipvF2ELxqUIsH1DrcgTpRtnQpUc7PWO72VqNsYEqLK3fh7z665Q040VTXzfXbVd+IFvckEeVV3TFmlaZEnn1eeDlzuLxWKxWCwWi8VisXyaf3jsH8eZomRXAAAAAElFTkSuQmCC" alt="Sample photo">
+            <div class="text">
+              <h3 class="t">Twitter</h3>
+              <p>Twitter, Inc. is an American social media company operates the microblogging and social networking service Twitter</p>
+             
+            </div>
+          </article>
+          <article class="card">
+            <img src="data:image/png;base64,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" alt="Sample photo">
+            <div class="text">
+              <h3 class="g">Github</h3>
+              <p>GitHub, Inc. is an Internet hosting service for software development and version control using Git.</p>
+             
+            </div>
+          </article>
+          <article class="card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAaVBMVEUAd7X///8AcLEEebb7/f4Debb9/v79/v8DeLY8l8Y7lsYAbbCcyuKlz+WQxN+Lwd0KfbiDvdvl8fcAc7O+3OwgiL6x1ehFnMlytNZqsNQZhLzF4O7w9/tSo81gqtGp0ebc7PUsjsJ8udngaOvIAAADg0lEQVRoge2abZeqIBCAGV7EjXItKjc1y/7/j7xD7m5AWHdD+uScs3s8kDzOIMwMDoGrSJ4lEC6H0ckVkUEiyeQPBC+ar+pjcqm+GsQMEAntUSuaQJQ+toZC8F+7U4KJBMKE6ltUwkAqJUgiEapCAJGwpSwVgxBGtyAJh4NKCVEH4AStRZNZC+1F0V5orgXN00FyukBzZekh2XsgbzFXCMIGSQlhTCsjegrMCEQQVXfF8rOrFYm3YxjCdFnw6zbdFkJHr6AgROjdGYAbATjXOlaXEISRcgN88GEZh3NJIuclBBF0BfzXr3EoYve1ACTXPViuOAO+izRYAMLUxVLEqBK7RQcggp48yHJ6SG5cjAWRsI/0A0FN9g6Ew2p6TZhae+a6pDDXwn67UKt++rcL3+Gts072sW4gDOn5L4VjRBa7rwT3LkarDMNvmeEf8EV0tDSyC9O++dZku4uPyEb8CdO6KrbNtvjQOt5rjXnGnGGkrKmibALfP+7jBQ6fs0lCvnHIn4Tlj2KBsTkJX4cGYgLH1yiD8n+A/LcgACevrHe7ujRXQYXCEFHaIsLNZjgMnMrjstm0nLebZnXodSi6Cbvfz3Zzk3Y97I/ozOxmE2Dkql5vnCS0OQbe+WAgoZbOjcUPpLBbeU0I7dprZi4xlZYyM8ENNP3d6h2DcPkj/Ab5vDVjkllrgg/DpfNA+HN59D3DKMTahW3ILbxoa3Ru/D75x59Uni6vQ3hZOL7N8j9+ePMqRMLmACNnGHce6FUItrcgA4ThCdwU9HUIjDLuVImAjB/4+EFnjCZXba6xv/SU8oLOOEhmvQgu5GRPShQER25Pl667nFrXeBmc7ZUSA8FxLyU1mSWtTw7Fm5S4ia/Ud5KsnVtM34dlrwiIxNkV31ZhhG1sXTh01sy/DkG7W55SqC9npcLXJBBvHEzPLFU4rCeBgBeHs7MDKaaA4A5ZWggvdXKzs5chGTSOn2XKTZlX02jiJnnGOU8O8ZO8u146CWTpQdYzZIbMkBkyQ2bIDJkhA+QmDsRqDkCs3tXTqH4FtiyDxx6BkMiW/ZO4K6eH/eom+27oy2nnNB+8DPfo9j5JgswBk/PVnj1sfnzTKMScPVpf7fMnzU97JzqDfCxvhMxfsf8Ake8pX3hLIUbqkhJtSkpSF8ccTXGMKSXqk5f5vKVg6Xpkkbz06j1FZJC6HO4fbRVnSvd35FUAAAAASUVORK5CYII=" alt="Sample photo">
+            <div class="text">
+              <h3 class="l">LinkedIn</h3>
+              <p>LinkedIn is an American business and employment-oriented online service that operates via websites, mobile apps.</p>
+              
+            </div>
+          </article>
+          <article class="card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX/AAD/////u7v/6+v/0ND/aWn/mZn/zc3/9fX/h4f/5ub/+Pj/tbX/t7f/oKD/ODj/Kir/3d3/wMD/MzP/UVH/1dX/yMj/qan/lJT/TU3/gID/Fxf/PT3/eHj/Dg7/jY3/ZWX/Q0P/XV3/IiL/cXH/q6v/X1//eXnZjuaVAAAE20lEQVR4nO2d63aiQAyAOyKgXAVF0Lbrtbvv/4YLZ9didUDQQEjI9689RyffwcCQub0p7rxhB9A5YkgfMaSPGNJHDOkjhvQRQ/qIIX3EkD5iSB8xpI8Y0kcM6SOG9BFD+oghfcSQPmJIHzGkjxi+jHEhml4Tff+/6wBeMXTdWU6SrD0/DQIry3Z709yEYbh4e45F/tmNae53WWYFQep76yQpmnDd3gxdw4mi2LPm27O5OZzenzRpy/vpsDHP27nlxVHkGO18Gxo6dmx9HjfLvpzqeF9ujp9WbDtQhnZqPvur65qFmdovGjrBCtviIaug/mLWGdp77Ogbsq+7ktWG0fAvX8kqam+4xQ66JduWhk6IHXFrwop01BuuscN9inVzQw871ifxmhr62JE+jd/MMMGO8wWSJoYudpQvcd9nvTc8Ygf5EsfHhlTvMhfu7ja3hu4JO8QXOd3+Tm8NA+wIXyZ4YIgdHwD1htSzsMCrNTxghwfAoc7QwI4OBKPGcIIdHAiTGsMzdnAgnGsMP7CDA+Gj2tDBjg0Ip9LQxg4NCLvS0MIODQir0vATOzQgPisNedxobm4114Yz7MjAmFUY8ujRFBgVhjRriDrWFYYpdmBgpBWGXB4WPx8X14Y8eqUF5wrDJXZgYCwrDLHjAmSshnwehz8eiFeGlMcrbkm0hjF0M4hTOGKtIfig2iRGm37jaw3Ba6UTpTLo72yIpzWcQzdT1LwMnG7EXGtoQjfzr6qXbKC/twGm1hB84PBSt4x/QX/zQ45aQ/A3/LIy23uf/kNrCH5zv6o9Gz2XgBa9GyoV9ZqOWsMZeLb8HD9QcY/Dy79mGIZ9pqPWMAJv5s5QGb3NB4yQDPub06kznIK3ojPM07GXDvkU0VCpoIcegM4QfuCpylDNwLvAd5TDTyiGSjldp6POEL7iXWOYN9dtZa+sepeGX+Ct1BoqlXaZjl8aQ/ia/gPDTtOxrOtjGubp2NlUT53hDryVx4Z5OnY0KrvTGML/ZJoY5vnfSTqWZQx8w27ScVCGeTr+Bm9bZwjf7W9smKcj9KTIcpFQaQheamtjqJQHm45lsW0whsBpMkhDZezh2h6mYf4GB5aOQzVUygcazBmuoVIwd5zhGnK/htzzkP29lPvzsIc+Da9+6R+NIf93C3k/bM/Q3vH512n419r410v517z5j1vwH3viP37IfwyY/zg+/7kY/OfT8J8TxX9eG/+5iSOYX8p/jjD/ed785+rzX2/Bf80M/3VP/Neu8V9/yH8NKf91wCMw5L8en/+eCvz3xeC/twn//Wn4PBCr9hjiv08U/72+RrBfG5fHRfWee/z3TeS/9yWTW03N/qVMeqZ1e9Dy30eYR6+mbi9o/vt5s9iT3a815FDJuDW6+Zv/2Qj8z7cgn4kPzygZwTkzIzgriPT4RaPznij33XSzsHSGZO82jc9do1pXbHF23gjOP1T8z7BUIziHVPE/S7aA+3nA/68k6zOdy4vJ+Vzuaxifra73dYvD65Nk7flpEFhZttub5ioMw2d/1Yv8syvT3O+yzAqC1PfsJCmacNs5wRk2wrgQTa+Jvv/fdQCdG6IjhvQRQ/qIIX3EkD5iSB8xpI8Y0kcM6SOG9BFD+oghfcSQPmJIHzGkjxjSRwzpI4b0EUP6iCF9/gKCNIdvAhrz/wAAAABJRU5ErkJggg==" alt="Sample photo">
+            <div class="text">
+              <h3 class="y">Youtube</h3>
+              <p>YouTube is a global online video sharing and social media platform headquartered in San Bruno, California. </p>
+              
+            </div>
+          </article>
+          
+    </div>
+    <div class="fotter">
+        <a  target=_blank href="https://www.facebook.com/"><div class="fa fa-facebook"></div></a>
+        <a  target=_blank href="https://www.instagram.com/"><div class="fa fa-instagram"></div></a>
+        <a target=_blank href="https://twitter.com/"><div class="fa fa-twitter"></div></a>
+        <a target=_blank href="https://www.github.com/"><div class="fa fa-github"></div></a>
+        <a target=_blank href="https://www.linkedin.com/"><div class="fa fa-linkedin"></div></a>
+        <a target=_blank href="https://www.youtube.com/"><div class="fa fa-youtube"></div></a>
+    </div>
+</div>
+</body>
+</html>
